@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTrueque</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-green: #4CAF50;
+      --soft-green: #E8F5E9;
+    }
+    body {
+      background-color: #f4f4f4;
+    }
+    .navbar {
+      background-color: var(--primary-green);
+    }
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+    }
+    .hero {
+      background-color: var(--soft-green);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    .card-icon {
+      font-size: 3rem;
+      color: var(--primary-green);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">EcoTrueque</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publicar">Publicar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estudiantil">Zona Estudiantil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Intercambia o dona. Todo tiene una segunda vida.</h1>
+      <p class="lead">EcoTrueque es una comunidad para compartir, reutilizar y apoyar.</p>
+      <a href="#categorias" class="btn btn-success">Explorar categorías</a>
+    </div>
+  </section>
+
+  <!-- Categorías -->
+  <section class="container" id="categorias">
+    <h2 class="section-title text-center">Categorías disponibles</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+            <i class="bi bi-person card-icon"></i>
+            <h5>Ropa y Accesorios</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <i class="bi bi-laptop card-icon"></i>
+          <h5>Tecnología</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <i class="bi bi-house card-icon"></i>
+          <h5>Hogar</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zona Estudiantil -->
+  <section class="container" id="estudiantil">
+    <h2 class="section-title text-center">Zona Estudiantil</h2>
+    <p class="text-center">Intercambia o dona uniformes, útiles, mochilas, libros y más entre estudiantes.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card p-3 mb-4">
+          <i class="bi bi-book card-icon text-center"></i>
+          <h5 class="text-center">Material Escolar</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publicar -->
+  <section class="container" id="publicar">
+    <h2 class="section-title text-center">Publica un objeto</h2>
+    <form class="bg-white p-4 rounded shadow">
+      <div class="mb-3">
+        <label class="form-label">Nombre del objeto</label>
+        <input type="text" class="form-control" placeholder="Ej. Mochila negra" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Categoría</label>
+        <select class="form-select">
+          <option>Ropa</option>
+          <option>Tecnología</option>
+          <option>Estudiantil</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">¿Deseas donar o intercambiar?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipo" id="donar" checked>
+          <label class="form-check-label" for="donar">Donar</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipo" id="intercambiar">
+          <label class="form-check-label" for="intercambiar">Intercambiar</label>
+        </div>
+      </div>
+      <button class="btn btn-success w-100">Publicar</button>
+    </form>
+  </section>
+
+  <footer class="text-center mt-5 p-4 bg-light">
+    <p class="mb-0">© 2025 EcoTrueque - Hecho con 💚 para la sostenibilidad</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
