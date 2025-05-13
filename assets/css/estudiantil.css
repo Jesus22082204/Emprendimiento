@@ -5,10 +5,12 @@ body {
   color: #333;
 }
 
+/* ======= Header ======= */
 .header {
-  background-color: #ff99cc;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .logo img {
@@ -16,44 +18,62 @@ body {
   margin-right: 10px;
 }
 
-.logo .sitename {
-  color: #ffffff;
+.sitename {
   font-size: 1.5rem;
-}
-
-.navbar .nav-link {
-  color: #fff !important;
   font-weight: bold;
+  color: #2e7d32;
 }
 
-#aqui
-
-.navbar .dropdown-menu {
-  background-color: #ffe5ec;
+/* ======= Navbar ======= */
+.navmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.navbar .dropdown-item {
-  color: #ff3399;
+.navmenu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar .dropdown-item:hover {
-  background-color: #ffd6e7;
-  color: #cc0066;
+.navmenu a.active, .navmenu a:hover {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown:hover ul {
+  display: block;
 }
 #aqui
 
 .title {
   font-size: 2rem;
-  color: #ff3399;
+  color: #8dcbff;
   margin-bottom: 20px;
 }
 
 .search-box {
-  border: 2px dashed #ff66b2;
+  border: 2px dashed #8dcbff;
   border-radius: 25px;
   padding: 12px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .btn-warning {
@@ -87,6 +107,52 @@ body {
   padding: 0.5em 1em;
 }
 
+main p {
+  font-size: 2rem;
+  color: #6c757d;
+}
+
+
+/* Área de información de contacto */
+.footer .contact-info {
+  flex: 1 1 300px;
+}
+
+.footer .contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.footer .contact-info p {
+  margin: 5px 0;
+}
+
+/* Área de redes sociales */
+.footer .social-media {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 200px;
+  justify-content: flex-end;
+}
+
+.footer .social-media a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #495057;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer .social-media a:hover {
+  background-color: #adb5bd;
+}
 
 @keyframes floating {
   from {
