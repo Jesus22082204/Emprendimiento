@@ -13,6 +13,14 @@ body {
 }
 
 /* Titulares */
+
+h2, h3 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #fff;
+}
+
 h2, h3, h5 {
   font-weight: 700;
   color: #2e7d32;
@@ -74,8 +82,8 @@ h2, h3, h5 {
 }
 
 .btn-warning {
-  background-color: #ffc107;
-  color: #212529;
+  background-color: #198754;
+  color: #ffffff;
   border: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -86,14 +94,14 @@ h2, h3, h5 {
   background-color: #e0a800;
 }
 
-/* ======= Tarjetas ======= */
+/* Tarjetas */
 .card {
   border: none;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .card:hover {
@@ -104,10 +112,10 @@ h2, h3, h5 {
 /* Imagen de tarjetas */
 .card-img-top {
   width: 100%;
-  height: 300px; /* o la altura que necesites */
+  height: 300px; /* Ajusta la altura según lo necesites */
   object-fit: contain;
+  transition: transform 0.3s ease-in-out;
 }
-
 
 .card-img-top:hover {
   transform: scale(1.02);
@@ -125,7 +133,7 @@ h2, h3, h5 {
   }
 }
 
-/* ======= Etiquetas (badges) ======= */
+/* Etiquetas (badges) */
 .badge {
   font-size: 0.85rem;
   padding: 0.5em 0.9em;
@@ -133,6 +141,11 @@ h2, h3, h5 {
   background-color: #e8f5e9;
   color: #2e7d32;
   font-weight: 600;
+}
+
+.badge.bg-success,
+.badge.bg-warning {
+  color: #ffffff !important;
 }
 
 /* ======= Texto Principal ======= */
