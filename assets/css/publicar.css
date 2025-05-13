@@ -5,39 +5,40 @@
 }
 
 body {
+  background: linear-gradient(to bottom, #ffffff, #2e7d32);
   font-family: 'Arial';
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
   color: #333;
+  overflow-x: hidden;
 }
-
-/* --- Header y Navbar --- */
+/* Header */
 .header {
   background-color: #ffffff;
-  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
 }
 
-.header .logo img {
+.logo img {
   max-height: 50px;
+  margin-right: 10px;
 }
 
 .sitename {
-  font-size: 1.5rem;
-  /* La clase fw-bold y text-success ya aplican peso y color, pero aquí
-     forzamos el color verde para mantener la coherencia */
-  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ff69b4;
 }
 
-.navbar .nav-link {
-  color: #2e7d32 !important;
-  font-size: 1rem;
-  padding: 10px 15px;
+/* Navbar */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #ff8c00;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: #2e7d32 !important;
+.navbar-nav .nav-link:hover {
+  color: #ff1493;
+  transform: scale(1.1);
 }
 
 .dropdown ul {
@@ -117,54 +118,39 @@ input[type="file"].form-control {
   background-color: #218838 !important;
 }
 
-/* --- Footer --- */
-
-main p {
-  font-size: 2rem;
-  color: #6c757d;
-}
-
-
 /* Área de información de contacto */
-.footer .contact-info {
-  flex: 1 1 300px;
+.footer {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 .footer .contact-info h3 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #28a745;
+  margin-bottom: 1rem;
 }
 
 .footer .contact-info p {
-  margin: 5px 0;
-}
-
-/* Área de redes sociales */
-.footer .social-media {
-  display: flex;
-  gap: 10px;
-  flex: 1 1 200px;
-  justify-content: flex-end;
+  margin: 0.25rem 0;
 }
 
 .footer .social-media a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #e9ecef;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  color: #495057;
-  font-size: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #198754;
+  transition: color 0.3s;
 }
 
 .footer .social-media a:hover {
-  background-color: #adb5bd;
+  color: #145c34;
 }
+
+.footer .copyright {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 1rem;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

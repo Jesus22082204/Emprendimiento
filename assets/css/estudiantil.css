@@ -1,19 +1,21 @@
-/* Zona Infantil - Estilo colorido, infantil y amigable */
+/* Reset y fuentes amigables */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
-  background-color: #fff0f5;
+  background: linear-gradient(to bottom, #ffffff, #5eb7ff);
   font-family: 'Arial';
   color: #333;
+  overflow-x: hidden;
 }
 
-/* ======= Header ======= */
+/* Header */
 .header {
   background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000;
 }
@@ -24,33 +26,21 @@ body {
 }
 
 .sitename {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: #2e7d32;
+  color: #ff69b4;
 }
 
-/* ======= Navbar ======= */
-.navmenu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  align-items: center;
+/* Navbar */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #ff8c00;
+  transition: all 0.3s ease-in-out;
 }
 
-.navmenu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 8px 12px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.navmenu a.active, .navmenu a:hover {
-  color: #2e7d32;
-  background-color: #e8f5e9;
-  border-radius: 5px;
+.navbar-nav .nav-link:hover {
+  color: #ff1493;
+  transform: scale(1.1);
 }
 
 .dropdown ul {
@@ -65,107 +55,123 @@ body {
 .dropdown:hover ul {
   display: block;
 }
-#aqui
 
+/* Títulos */
 .title {
-  font-size: 2rem;
-  color: #8dcbff;
+  font-size: 2.2rem;
+  color: #1e88e5;
   margin-bottom: 20px;
+  text-shadow: 1px 1px #fff;
 }
 
-.search-box {
-  border: 2px dashed #8dcbff;
-  border-radius: 25px;
-  padding: 12px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+/* Buscador */
+.input-group {
+  max-width: 600px;
+  margin: 1rem auto;
 }
 
 .btn-warning {
-  background-color: #ffcc00;
+  background-color: #ffc107;
+  color: #212529;
   border: none;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.3);
+.btn-warning:hover {
+  background-color: #e0a800;
 }
 
 .card {
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-color: #ffffff;
 }
 
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.25);
+}
+
+/* Imagen de tarjetas */
 .card-img-top {
   width: 100%;
-  height: 200px;
+  height: 300px; /* o la altura que necesites */
   object-fit: contain;
-  background-color: #f8f9fa; /* Opcional: establece un color de fondo para rellenar el espacio */
 }
 
+.card-img-top:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
 
 .badge {
   font-size: 0.9rem;
   padding: 0.5em 1em;
+  border-radius: 12px;
 }
 
-main p {
-  font-size: 2rem;
-  color: #6c757d;
+/* Burbujas animadas */
+.bubble {
+  animation: float 3s ease-in-out infinite alternate;
 }
 
 
-/* Área de información de contacto */
-.footer .contact-info {
-  flex: 1 1 300px;
+/* ======= Footer ======= */
+.footer {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
 }
 
 .footer .contact-info h3 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #28a745;
+  margin-bottom: 1rem;
+  color: #2e7d32;
 }
 
 .footer .contact-info p {
-  margin: 5px 0;
-}
-
-/* Área de redes sociales */
-.footer .social-media {
-  display: flex;
-  gap: 10px;
-  flex: 1 1 200px;
-  justify-content: flex-end;
+  margin: 0.25rem 0;
+  color: #555;
 }
 
 .footer .social-media a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #e9ecef;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  color: #495057;
-  font-size: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  margin: 0 12px;
+  font-size: 1.6rem;
+  color: #2e7d32;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .footer .social-media a:hover {
-  background-color: #adb5bd;
+  color: #1b5e20;
+  transform: scale(1.1);
 }
 
+.footer .copyright {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* ======= Animaciones ======= */
 @keyframes floating {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-10px);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
 }
-
-
