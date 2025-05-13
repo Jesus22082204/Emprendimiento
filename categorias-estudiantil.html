@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>EcoTrueque - Zona Infantil</title>
+  <meta name="description" content="Encuentra objetos estudiantiles para intercambio o donación.">
+  <meta name="keywords" content="trueque, donaciones, intercambio, zona infantil, estudiantil">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+
+  <!-- CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/estudiantil.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+        <img src="assets/img/logo.png" alt="Logo de EcoTrueque">
+        <span class="sitename fw-bold text-success">EcoTrueque</span>
+      </a>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-success" href="#" id="zonaDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Zona
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="zonaDropdown">
+                  <li><a class="dropdown-item" href="categorias-todas.html">General</a></li>
+                  <li><a class="dropdown-item" href="categorias-estudiantil.html">Estudiantil</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="publicar.html">Publicar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Buscador -->
+  <section class="container mt-5">
+    <h2 class="text-center title">Encuentra materiales escolares 🎒📚</h2>
+    <div class="input-group mb-3 search-box">
+      <input type="text" class="form-control" placeholder="Buscar un objeto..." aria-label="Buscar">
+      <button class="btn btn-warning">Buscar</button>
+    </div>
+  </section>
+
+  <!-- Listado de Objetos -->
+  <section class="container mt-4">
+    <h3 class="text-center title">Artículos Disponibles ✏️🖍️</h3>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card text-center p-3 bubble">
+          <img src="assets/img/libros.jpg" class="card-img-top" alt="Libros de primaria">
+          <div class="card-body">
+            <h5 class="card-title">Libros de primaria</h5>
+            <p class="card-text">Material educativo para niños</p>
+            <span class="badge bg-success">Donación</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card text-center p-3 bubble">
+          <img src="assets/img/mochila.png" class="card-img-top" alt="Mochila escolar">
+          <div class="card-body">
+            <h5 class="card-title">Mochila escolar</h5>
+            <p class="card-text">Perfecta para llevar útiles escolares</p>
+            <span class="badge bg-warning">Intercambio</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card text-center p-3 bubble">
+          <img src="assets/img/lapices.jpg" class="card-img-top" alt="Set de colores">
+          <div class="card-body">
+            <h5 class="card-title">Set de colores</h5>
+            <p class="card-text">Ideal para actividades creativas</p>
+            <span class="badge bg-success">Donación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center mt-5 p-4 bg-light">
+    <p>© 2025 EcoTrueque - Plantilla descargada desde Bootstrapmade, con fines únicamente académicos. (Jesus Chinchilla, Alexa, Maireth - Calletena López Baleta)</p>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* --- Header y Navbar --- */
+.header {
+  background-color: #ffffff;
+  padding: 15px 0;
+}
+
+.header .logo img {
+  max-height: 50px;
+}
+
+.sitename {
+  font-size: 1.5rem;
+  /* La clase fw-bold y text-success ya aplican peso y color, pero aquí
+     forzamos el color verde para mantener la coherencia */
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: #2e7d32 !important;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #2e7d32 !important;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+/* --- Contenedor Principal y Título --- */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2.text-center {
+  font-size: 2rem;
+  color: #28a745;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* --- Formulario de Publicación --- */
+form.bg-white {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+/* Para el input tipo file se le da un poco menos de padding */
+input[type="file"].form-control {
+  padding: 5px;
+}
+
+/* Estilos para radio buttons */
+.form-check {
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+/* --- Botón de Publicación --- */
+.btn-success {
+  background-color: #28a745 !important;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838 !important;
+}
+
+/* --- Footer --- */
+
+main p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .header .container-fluid,
+  .navbar {
+    padding: 0 15px;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+}

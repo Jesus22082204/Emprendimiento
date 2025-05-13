@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Publicar un Objeto | EcoTrueque</title>
+  <meta name="description" content="Publica un objeto para intercambiar o donar en EcoTrueque.">
+  <meta name="keywords" content="trueque, donaciones, intercambio, objetos, sostenibilidad">
+
+  <!-- CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/contacto.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+        <img src="assets/img/logo.png" alt="Logo de EcoTrueque">
+        <span class="sitename fw-bold text-success">EcoTrueque</span>
+      </a>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-success" href="#" id="zonaDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Zona
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="zonaDropdown">
+                  <li><a class="dropdown-item" href="categorias-todas.html">General</a></li>
+                  <li><a class="dropdown-item" href="categorias-estudiantil.html">Estudiantil</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="publicar.html">Publicar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="contact-container">
+    <!-- Información de Contacto -->
+    <div class="contact-info">
+      <div class="info-item">
+        <div class="icon">
+          <img src="assets/img/location.png" alt="Location Icon">
+        </div>
+        <div class="text">
+          <h4>Dirección</h4>
+          <p>Calle 10N #33-40 - Aguachica</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="icon">
+          <img src="assets/img/phone.png" alt="Phone Icon">
+        </div>
+        <div class="text">
+          <h4>Llámanos</h4>
+          <p>+1 5589 55488 55</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="icon">
+          <img src="assets/img/email.png" alt="Email Icon">
+        </div>
+        <div class="text">
+          <h4>Email</h4>
+          <p>info@mail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="contact-form">
+      <form id="contactForm" action="#" method="post">
+        <input type="text" name="name" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Email" required>
+        <input type="text" name="subject" placeholder="Asunto" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center mt-5 p-4 bg-light">
+    <p>© 2025 EcoTrueque - Plantilla descargada desde Bootstrapmade, con fines únicamente académicos. (Jesus Chinchilla,
+      Alexa, Maireth - Calletena López Baleta)</p>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
