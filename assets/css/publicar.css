@@ -160,14 +160,13 @@ main p {
   background-color: #adb5bd;
 }
 
-/* --- Responsive Adjustments --- */
+/* Responsive */
 @media (max-width: 768px) {
-  .header .container-fluid,
-  .navbar {
-    padding: 0 15px;
+  .sitename {
+    font-size: 1.2rem;
   }
-  
-  .navbar-nav {
-    text-align: center;
+
+  main h1 {
+    font-size: 2rem;
   }
 }
