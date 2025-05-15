@@ -114,12 +114,24 @@ body {
   font-size: 1.1rem;
   font-style: italic;
   margin-bottom: 15px;
+  color: #000000;
 }
 
 .testimonial h5 {
   font-size: 1.2rem;
   color: #28a745;
   margin-bottom: 10px;
+}
+
+p1 {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+ h6 {
+  font-size: 1.7rem;
+  color: #198754  ;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .stars i {
@@ -137,12 +149,21 @@ main h1 {
   font-size: 3rem;
   color: #198754;
   margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #198754;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 main p {
-  font-size: 1.5rem;
-  color: #6c757d;
+  font-size: 1.7rem;
+  color: #000000;
 }
+
 
 /* Responsive para títulos */
 @media (max-width: 768px) {

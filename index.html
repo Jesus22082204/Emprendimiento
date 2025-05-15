@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EcoTrueque</title>
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +19,7 @@
 
   <!-- CSS personalizado -->
   <link href="assets/css/html.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,7 +29,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
-        <img src="assets/img/logo.png" alt="Logo de EcoTrueque">
+        <img src="assets/img/logo.jpeg" alt="Logo de EcoTrueque">
         <span class="sitename fw-bold text-success">EcoTrueque</span>
       </a>
       <!-- Navbar -->
@@ -57,6 +60,9 @@
               <li class="nav-item">
                 <a class="nav-link text-success" href="contact.html">Contacto</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="about.html">Sobre Nosotros</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -67,7 +73,8 @@
   <!-- Contenido principal -->
   <main class="container mt-5">
     <h1>Bienvenido a EcoTrueque</h1>
-    <p>Tu espacio para el intercambio sostenible.</p>
+    <p>Intercambia o dona, todo tiene una segunda vida.
+      Plataforma de intercambio y donación que promueve el consumo responsable y la economía circular.</p>
   </main>
 
   <!-- Carrusel de Imágenes -->
@@ -96,25 +103,74 @@
     </button>
   </div>
 
-  <!-- Sección de Información: Misión, Visión y más -->
-  <section id="informacion" class="container my-5">
-    <div class="card p-4">
-      <h2 class="text-center mb-4">Acerca de EcoTrueque</h2>
-      <p><strong>Intercambia o dona. Todo tiene una segunda vida.</strong></p>
-      <p><strong>¿Qué es EcoTrueque?</strong> Es una plataforma web que promueve el consumo responsable mediante el
-        intercambio o donación de objetos en buen estado, incluyendo una Zona Estudiantil para facilitar el apoyo entre
-        estudiantes.</p>
-      <p><strong>Justificación:</strong> Muchas personas tienen artículos útiles que ya no usan, y EcoTrueque conecta a
-        quienes los necesitan, fomentando la solidaridad, la sostenibilidad y la economía circular.</p>
-      <p><strong>Objetivos:</strong></p>
-      <ul>
-        <li>Facilitar el intercambio y la donación de objetos.</li>
-        <li>Promover el consumo consciente.</li>
-        <li>Apoyar a estudiantes y reducir recursos escolares.</li>
-        <li>Reducir residuos reutilizables.</li>
-      </ul>
-      <p><strong>Valor Diferencial:</strong> Modalidad doble (intercambio o donación), Zona Estudiantil exclusiva, y una
-        plataforma amigable, comunitaria y ecológica.</p>
+  <!-- Sección: ¿En qué podemos ayudarte? -->
+  <section class="container my-5">
+    <h2 class="text-center text-success mb-4">¿En qué podemos ayudarte?</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="">Intercambiar Artículos</h6>
+            <p1 class="card-text">¿Tienes artículos que ya no usas pero están en buen estado? Intercámbialos por otros
+              que necesites.</p1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="">Donar Artículos</h6>
+            <p1 class="card-text">Dona lo que ya no necesitas. Alguien más puede darle un buen uso y juntos cuidamos el
+              planeta.</p1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="">Encontrar lo que necesitas</h6>
+            <p1 class="card-text">Explora miles de artículos disponibles para intercambio o donación. ¡Encuentra justo lo
+              que buscas!</p1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: ¿Qué hacemos? -->
+  <section class="container my-5">
+    <h2 class="text-center text-success mb-4">¿Qué hacemos?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-success">
+          <div class="card-body">
+            <h6 class="">Intercambio sostenible</h6>
+            <p1 class="card-text">Promovemos la economía circular facilitando el intercambio y la donación de artículos
+              en buen estado. Reducimos residuos y damos nueva vida a lo que otros ya no usan.</p1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-success">
+          <div class="card-body">
+            <h6 class="">Intercambio seguro</h6>
+            <p1 class="card-text">Creamos un entorno confiable para que usuarios puedan intercambiar artículos con
+              tranquilidad.</p1>
+            <h6 class="mt-3">Donaciones con impacto</h6>
+            <p1 class="card-text">Canalizamos tus donaciones hacia personas que realmente las necesitan.</p1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-success">
+          <div class="card-body">
+            <h6 class="">Educación ambiental</h6>
+            <p1 class="card-text">Concientizamos sobre el impacto del consumo y la importancia de reutilizar.</p1>
+            <h6 class="mt-3">Comunidad comprometida</h6>
+            <p1 class="card-text">Conectamos a personas que creen en el cambio y en un mundo más sostenible.</p1>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -193,13 +249,16 @@
       <p>Email: info@mail.com</p>
     </div>
     <div class="social-media">
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i
+          class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i
+          class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i
+          class="bi bi-linkedin"></i></a>
     </div>
     <div class="copyright">
       <p>© 2025 EcoTrueque - Plantilla descargada desde Bootstrapmade, con fines únicamente académicos. (Jesus
-        Chinchilla, Alexa, Maireth - Calletena López Baleta)</p>
+        Chinchilla, Alexandra Bautista, Maireth Marquez- Calletena López Baleta)</p>
     </div>
   </footer>
 
