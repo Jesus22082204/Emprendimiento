@@ -62,9 +62,11 @@ body {
 
 h2.text-center {
   font-size: 2rem;
-  color: #28a745;
+  color: #2e7d32;
   margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
+
 }
 
 /* --- Formulario de Publicación --- */

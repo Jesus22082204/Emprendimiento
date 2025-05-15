@@ -125,7 +125,8 @@ body {
 
 p1 {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: #000000;
+  text-align: center;
 }
  h6 {
   font-size: 1.7rem;

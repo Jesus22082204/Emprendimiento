@@ -69,9 +69,11 @@ h5 {
 
 h2.text-center {
   font-size: 2rem;
-  color: #28a745;
+  color: #2e7d32;
   margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
+
 }
 
 /* --- Formulario de Publicación --- */
@@ -171,9 +173,10 @@ input[type="file"].form-control {
 }
 
 main h3 {
-  color: #145c34;
+  color: #2e7d32;
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 
@@ -181,6 +184,20 @@ p1 {
   font-size: 1.2rem; /* Puedes aumentar a 1.3rem o más si lo deseas */
   line-height: 1.6;
   text-align: justify;
+  color: #000000;
+}
+c {
+  font-size: 1rem; /* Puedes aumentar a 1.3rem o más si lo deseas */
+  line-height: 1.6;
+  text-align: justify;
+  color: #000000;
+}
+b {
+  font-size: 1.2rem; /* Puedes aumentar a 1.3rem o más si lo deseas */
+  line-height: 1.6;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
 }
 
 main ul {
